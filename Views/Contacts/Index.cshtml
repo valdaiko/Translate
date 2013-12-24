@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "Контакты";
+    ViewBag.Description = "Контакты, адрес, телефон - Бюро переводов Respect, Ульяновск";
+    ViewBag.KeyWords = "Бюро переводов Ульяновск, центр переводов Ульяновск, контакты, адрес, телефон, схема проезда, карта";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="main">
+    <h1>
+        Контакты</h1>
+    <div class="map">
+        <a id="firmsonmap_biglink" href="http://maps.2gis.ru/#/?history=project/ulyanovsk/center/48.400964739896,54.321408295719/zoom/16/state/widget/id/7741090140678684/firms/7741090140678684">
+            Перейти к большой карте</a>
+        <script charset="utf-8" type="text/javascript" src="http://firmsonmap.api.2gis.ru/js/DGWidgetLoader.js"></script>
+        <script charset="utf-8" type="text/javascript">
+            new DGWidgetLoader({
+                "borderColor": "#a3a3a3",
+                "width": "500",
+                "height": "400",
+                "wid": "fb3f8b6f73f078ef2e2a95cada521951",
+                "pos": { "lon": "48.400964739896", "lat": "54.321408295719", "zoom": "16" },
+                "opt": { "ref": "hidden", "card": [null], "city": "ulyanovsk" },
+                "org": [{ "id": "7741090140678684"}]
+            });
+        </script>
+        <noscript style="color: #c00; font-size: 16px; font-weight: bold;">
+            Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+    </div>
+    <div class="address">
+        <section class="content">
+            <h4>
+                Адрес</h4>
+            <p class="fn org">
+                Бюро переводов Respect</p>
+            <p class="adr">
+                <span class="postal-code">432063</span>, <span class="locality">г. Ульяновск</span>,
+                <span class="street-address">2-й пер. Мира, д. 28А </span>
+            </p>
+            <p>
+                Проезд до остановки "Центробанк" (ул. Гончарова)</p>
+            <p>
+                автобусы: 1, 9, 20, 21, 30</p>
+            <p>
+                маршрутные такси: 12, 31, 33, 38, 40, 45, 67, 74, 78, 81, 82, 86 График работы:</p>
+            <p>
+                Пн.-Пт. с 10:00 до 18:00
+            </p>
+            <p>
+                <strong>Телефон:</strong> <span class="tel">+7(953)987-62-12</span></p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:info@ulrespect.ru" class="email">info@ulrespect.ru</a>
+                <br />
+                <span class="url"><span class="value-title" title="http://www.ulrespect.ru"></span>
+                </span>
+            </p>
+            <a id="a-office" href="@Url.Content("~/images/office.jpg")" rel="lightbox[office]">
+            </a>
+        </section>
+    </div>
+</div>

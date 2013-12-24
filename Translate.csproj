@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{21BE80B1-E06D-4193-BF24-98DD8E1DAD5C}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Translate</RootNamespace>
+    <AssemblyName>Translate</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\ArticlesController.cs" />
+    <Compile Include="Controllers\ContactsController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\JobsController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\PricesController.cs" />
+    <Compile Include="Controllers\ReviewsController.cs" />
+    <Compile Include="Controllers\ServicesController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="be44baaf8186.html" />
+    <Content Include="css\images\arrow-white.png" />
+    <Content Include="css\images\blue-arr.png" />
+    <Content Include="css\images\blue-btn.png" />
+    <Content Include="css\images\body-pattern.png" />
+    <Content Include="css\images\border-title.png" />
+    <Content Include="css\images\bullet.png" />
+    <Content Include="css\images\col-img.png" />
+    <Content Include="css\images\col-img2.png" />
+    <Content Include="css\images\container-mobile.png" />
+    <Content Include="css\images\container-tablet.png" />
+    <Content Include="css\images\container.png" />
+    <Content Include="css\images\date-ico.png" />
+    <Content Include="css\images\dd-nav-arrs%402x.png" />
+    <Content Include="css\images\dd-nav-arrs.png" />
+    <Content Include="css\images\entries-tablet.png" />
+    <Content Include="css\images\entries.png" />
+    <Content Include="css\images\entry-title.png" />
+    <Content Include="css\images\footer-border.png" />
+    <Content Include="css\images\left-arr.png" />
+    <Content Include="css\images\logo%402x.png" />
+    <Content Include="css\images\logo.png" />
+    <Content Include="css\images\mac-img.png" />
+    <Content Include="css\images\nav-btn.png" />
+    <Content Include="css\images\navigation%402x.png" />
+    <Content Include="css\images\navigation.png" />
+    <Content Include="css\images\partners-img.png" />
+    <Content Include="css\images\right-arr.png" />
+    <Content Include="css\images\search-ico.png" />
+    <Content Include="css\images\slider-arr%402x.png" />
+    <Content Include="css\images\slider-arr.png" />
+    <Content Include="css\images\slider-bg.jpg" />
+    <Content Include="css\images\slider-bg1.jpg" />
+    <Content Include="css\images\slider-bg1.png" />
+    <Content Include="css\images\slider-mobile%402x.png" />
+    <Content Include="css\images\slider-mobile.png" />
+    <Content Include="css\images\slider-tablet.png" />
+    <Content Include="css\images\thumb.png" />
+    <Content Include="css\images\thumb2.png" />
+    <Content Include="css\images\thumb3.png" />
+    <Content Include="css\images\thumb4.png" />
+    <Content Include="css\lightbox.css" />
+    <Content Include="css\style.css" />
+    <Content Include="google51224523aafac05b.html" />
+    <Content Include="css\images\arrow-gray.png" />
+    <Content Include="images\advantshop.png" />
+    <Content Include="images\email.png" />
+    <Content Include="images\lang.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\office.jpg" />
+    <Content Include="images\photo.png" />
+    <Content Include="images\R.png" />
+    <Content Include="images\RespectLogo.png" />
+    <Content Include="images\skype.png" />
+    <Content Include="images\sms.png" />
+    <Content Include="images\socials.png" />
+    <Content Include="images\stv.png" />
+    <Content Include="images\thumb1.png" />
+    <Content Include="images\thumb2.png" />
+    <Content Include="images\thumb3.png" />
+    <Content Include="images\time.png" />
+    <Content Include="images\vk.png" />
+    <Content Include="js\functions.js" />
+    <Content Include="js\jquery-1.8.0.min.js" />
+    <Content Include="js\jquery.carouFredSel-5.5.0-packed.js" />
+    <Content Include="js\lightbox.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="js\main.js" />
+    <Content Include="js\modernizr.custom.js" />
+    <Content Include="js\yamap.js" />
+    <Content Include="Global.asax" />
+    <Content Include="google1979768b4cc3b1f8.html" />
+    <Content Include="R.ico" />
+    <Content Include="sitemap.xml" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="yandex_4fb6c1220b911e2a.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Docs\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\MainMenu.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Contacts\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Services\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Order\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\About\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Prices\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Jobs\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Articles\consular-certification.cshtml" />
+    <Content Include="Views\Articles\Index.cshtml" />
+    <Content Include="Views\Articles\legalization-of-documents-apostille.cshtml" />
+    <Content Include="Views\Articles\notary-certification.cshtml" />
+    <Content Include="Views\Articles\web-sites-localization.cshtml" />
+    <Content Include="Views\Articles\written-translation.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Partners\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\BottomMenu.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Reviews\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Reviews\Thanks.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Articles\chto-vybrat-cv-ili-resume.cshtml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61424</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

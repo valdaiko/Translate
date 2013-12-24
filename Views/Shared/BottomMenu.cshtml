@@ -1,0 +1,12 @@
+﻿<div class="footer-nav">
+    <ul>
+        <li>@Html.ActionLink("Главная", "Index", "home", null, Request.RawUrl == "/" ? new { @class = "selected" } : null)</li>
+        <li>@Html.ActionLink("О нас", "Index", "about", null, Request.RawUrl == "/about" ? new { @class = "selected" } : null)</li>
+        <li>@Html.ActionLink("Услуги", "Index", "services", null, Request.RawUrl == "/services" ? new { @class = "selected" } : null)</li>
+        <li>@Html.ActionLink("Наши цены", "Index", "prices", null, Request.RawUrl == "/prices" ? new { @class = "selected" } : null)</li>
+        <li>@Html.ActionLink("Заказать", "Index", "order", null, Request.RawUrl == "/order" ? new { @class = "selected" } : null)</li>
+        <li>@Html.ActionLink("Вакансии", "Index", "jobs", null, Request.RawUrl == "/jobs" ? new { @class = "selected" } : null)</li>
+        <li>@Html.ActionLink("Контакты", "Index", "contacts", null, Request.RawUrl == "/contacts" ? new { @class = "selected" } : null)</li>
+    </ul>
+    <br class="cl" />
+</div>

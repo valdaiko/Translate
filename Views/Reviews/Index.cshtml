@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Отзывы клиентов";
+    ViewBag.Description = "Отзывы, мнения клиентов - Бюро переводов Respect, Ульяновск";
+    ViewBag.KeyWords = "Бюро переводов Ульяновск, центр переводов Ульяновск, отзывы, мнения, клиенты, заказчики";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="main">
+    <div class="reviews">
+        <h1>
+            Отзывы клиентов</h1>
+        <div class="testimonials">
+            <p>
+                Заказывала в этом центре перевод справки из банка для оформления визы. Все сделали
+                достаточно быстро и качествено. Спасибо.</p>
+            <p class="author">
+                Наталья Орлова</p>
+            <br />
+            <p>
+                Диплом перевели на английский за один день. Спасибо, респект!</p>
+            <p class="author">
+                Константин Быстров</p>
+        </div>
+    </div>
+    <div class="reviews-form">
+        <h3>
+            Оставить отзыв</h3>
+        @using (Html.BeginForm("Index", "reviews", FormMethod.Post, new { id = "reviews_form" }))
+        {
+            <p>
+                <input type="text" name="userName" placeholder="Ваше имя" required="required" /></p>
+            <p>
+                <input type="email" name="userEmail" placeholder="Ваш e-mail" required="required" /></p>
+            <p>
+                <textarea name="userReview" placeholder="Текст отзыва" required="required"></textarea></p>
+            <p>
+                <input type="submit" value="Оставить отзыв" class="blue-btn" />
+            </p>
+        }
+    </div>
+</div>

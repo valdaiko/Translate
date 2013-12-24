@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Заказать";
+    ViewBag.Description = "Заказ перевода он-лайн - Бюро переводов Respect, Ульяновск";
+    ViewBag.KeyWords = "Бюро переводов Ульяновск, центр переводов Ульяновск, заказать перевод, перевод он-лайн, on-line перевод, заказ перевода через интернет, перевести документы";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="main">
+    <div class="order-form">
+        <h1>
+            Заказать</h1>
+        @using (Html.BeginForm("Index", "order", FormMethod.Post, new { id = "contact_form" }))
+        {
+            
+            <input type="text" name="userName" placeholder="Фамилия, Имя" required />
+            <input type="text" name="userEmail" placeholder="E-mail или телефон" required />
+            <label for="userFile">Файл (не обязательно)</label><input type="file" id="userFile" name="userFile"  class="file" />
+            <textarea id="usercoment" name="usercoment" rows="0" cols="0" placeholder="Коментарий"></textarea>
+            <input type="submit" value="Заказать" class="blue-btn" />
+
+        }
+    </div>
+    <div class="order-comment">
+        <section class="content">
+            <h3>
+                Заказ перевода</h3>
+            <p>
+                Укажите свое имя, e-mail и прикрепите документ или отсканированные страницы которые
+                необходимо перевести (не более 10 Мб.). В коментарии можно указать язык, на который
+                необходимо перевести, а также пожелания по срокам и нотариальному заверению.</p>
+            <p>
+                Мы свяжется с Вами в самое ближайшее время.</p>
+    </div>
+    </section>
+</div>

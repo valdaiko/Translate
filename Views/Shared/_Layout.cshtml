@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>@ViewBag.Title</title>
+    <meta name="keywords" content="@ViewBag.KeyWords" />
+    <meta name="description" content="@ViewBag.Description" />
+    <link rel="shortcut icon" href="@Url.Content("~/R.ico")" type="image/x-icon" />
+    <link href="@Url.Content("~/css/style.css")" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="@Url.Content("~/css/lightbox.css")" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,600,500,300,200,100'
+        rel='stylesheet' type='text/css'>
+    <script src="@Url.Content("~/js/jquery-1.8.0.min.js")" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+		<script src="@Url.Content("~/js/js/modernizr.custom.js")"></script>
+	<![endif]-->
+    <script src="@Url.Content("~/js/jquery.carouFredSel-5.5.0-packed.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/js/functions.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/js/yamap.js")" type="text/javascript"></script>
+    @*    <script src="@Url.Content("~/js/lightbox.js")" type="text/javascript"></script>*@
+    <script src="@Url.Content("~/js/main.js")" type="text/javascript"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="shell">
+            <div class="container">
+                <header id="header">
+                    <a id="logo" href="@Url.Content("~/")">
+                        <img src="@Url.Content("~/images/respectlogo.png")" alt="Бюро переводов Respect" />
+                    </a>
+                    <div class="contacts">
+                        <span class="phone">+7 (953) 987-62-12</span>
+                        
+                        <a class="skype" href="skype:ulrespect?chat">Skype</a>
+                        <a class="email" href="mailto:info@ulrespect.ru">e-mail</a>
+                        <a class="vk" href="http://vk.com/ulrespect">В Контакте</a>
+                    </div>
+                    <br class="cl" />
+                </header>
+                @Html.Partial("MainMenu")
+                @RenderBody()
+                <br class="cl" />
+                <div id="footer">
+                    @Html.Partial("BottomMenu")
+                    <p class="copy">
+                        &copy; 2013<span>|</span>Бюро переводов Respect</p>
+                    <br class="cl" />
+                </div>
+            </div>
+        </div>
+    </div>
+    @*  <script type="text/javascript">
+     var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36060742-1']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!--LiveInternet counter-->
+    <script type="text/javascript"><!--
+        document.write("<a href='http://www.liveinternet.ru/click' " +
+                "target=_blank><img src='//counter.yadro.ru/hit?t50.6;r" +
+                escape(document.referrer) + ((typeof (screen) == "undefined") ? "" :
+                    ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ?
+                        screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) +
+                ";" + Math.random() +
+                "' alt='' title='LiveInternet' " +
+                "border='0' width='31' height='31'><\/a>")
+                                //--></script>
+    <!--/LiveInternet-->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function () {
+                try {
+                    w.yaCounter17768851 = new Ya.Metrika({ id: 17768851, enableAll: true, webvisor: true });
+                } catch (e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+        <div>
+            <img src="//mc.yandex.ru/watch/17768851" style="position: absolute; left: -9999px;"
+                alt="" />
+        </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->*@
+</body>
+</html>

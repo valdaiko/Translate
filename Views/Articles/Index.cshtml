@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Статьи";
+    ViewBag.Description = "Статьи, Бюро переводов Respect, Ульяновск";
+    ViewBag.KeyWords = "Бюро переводов Ульяновск, центр переводов Ульяновск, статьи, новости, материалы, письменный перевод, нотариальный, легализация, локализация";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="main">
+    <h1>
+        Статьи</h1>
+    <section class="content">
+        <ul>
+            <li>@Html.ActionLink("Что выбрать CV или Resume", "Index", "articles", new { id = "chto-vybrat-cv-ili-resume" }, null)</li>
+            <li>@Html.ActionLink("Письменный перевод", "Index", "articles", new { id = "written-translation" }, null)</li>
+            <li>@Html.ActionLink("Нотариальное заверение перевода", "Index", "articles", new { id = "notary-certification" }, null)</li>
+            <li>@Html.ActionLink("Легализация документов. Апостиль.", "Index", "articles", new { id = "legalization-of-documents-apostille" }, null)</li>
+            <li>@Html.ActionLink("Консульская легализация документов", "Index", "articles", new { id = "consular-certification" }, null)</li>
+            <li>@Html.ActionLink("Локализация web-сайтов", "Index", "articles", new { id = "web-sites-localization" }, null)</li>
+        </ul>
+    </section>
+</div>

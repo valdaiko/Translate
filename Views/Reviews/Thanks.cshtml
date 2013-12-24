@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Отзывы клиентов";
+    ViewBag.Description = "Отзывы, мнения клиентов - Бюро переводов Respect, Ульяновск";
+    ViewBag.KeyWords = "Бюро переводов Ульяновск, центр переводов Ульяновск, отзывы, мнения, клиенты, заказчики";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="main">
+    <h1>
+        Отзывы клиентов</h1>
+    <div class="reviews">
+        <div class="thanks">
+        Спасибо, Ваш отзыв принят! В ближайшее время он будет размещен на сайте.
+        <br />
+        @Html.ActionLink("На главную", "home")
+        </div>
+    </div>
+</div>

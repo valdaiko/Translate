@@ -1,0 +1,26 @@
+﻿<nav id="navigation">
+    <ul>
+        <li>@Html.ActionLink("Главная", "Index", "home", null, Request.RawUrl == "/" ? new { @class = "active" } : null)</li>
+        @*<li>@Html.ActionLink("О нас", "Index", "about", null, Request.RawUrl == "/about" || Request.RawUrl == "/jobs" || Request.RawUrl == "/reviews" ? new { @class = "active parent" } : new { @class = "parent" })
+            <div>
+                <ul>
+                </ul>
+            </div>
+        </li>*@
+         <li>@Html.ActionLink("О нас", "Index", "about", null, Request.RawUrl == "/about" ? new { @class = "active" } : null)</li>
+        <li>@Html.ActionLink("Услуги", "Index", "services", null, Request.RawUrl == "/services" ? new { @class = "active" } : null)</li>
+        <li>@Html.ActionLink("Наши цены", "Index", "prices", null, Request.RawUrl == "/prices" ? new { @class = "active" } : null)</li>
+        <li>@Html.ActionLink("Отзывы", "Index", "reviews", null, Request.RawUrl == "/reviews" ? new { @class = "active" } : null)</li>
+        <li>@Html.ActionLink("Заказать", "Index", "order", null, Request.RawUrl == "/order" ? new { @class = "active" } : null)</li>
+        <li>@Html.ActionLink("Вакансии", "Index", "jobs", null, Request.RawUrl == "/jobs" ? new { @class = "active" } : null)</li>
+        <li>@Html.ActionLink("Контакты", "Index", "contacts", null, Request.RawUrl == "/contacts" ? new { @class = "active" } : null)</li>
+        @*<li><a href="#">services</a>
+            <ul>
+                <li><a href="#">Перевод документов</a></li>
+                <li><a href="#">Перевод документов</a></li>
+                <li><a href="#">Перевод документов</a></li>
+            </ul>
+        </li>*@
+    </ul>
+    <br class="cl" />
+</nav>

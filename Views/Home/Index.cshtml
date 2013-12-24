@@ -1,0 +1,183 @@
+﻿@{
+    ViewBag.Title = "Бюро переводов Respect, Ульяновск";
+    ViewBag.Description = "Бюро переводов Respect, Ульяновск, переводы";
+    ViewBag.KeyWords = "Бюро переводов Ульяновск, центр переводов Ульяновск, перевод документов, нотариальное заверение, цены на перевод, агентство переводов, перевод с английского, французского, немецкого, заверение апостиля, заверение печати, переводы ульяновск";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="slider-holder">
+    <!-- slider -->
+    <div class="slider">
+        @*<div class="socials">
+            <a href="http://vk.com/ulrespect" class="vk-ico">Группа в Контакте</a> <a href="http://www.facebook.com/burorespect"
+                target="_blank" class="facebook-ico">Группа в Facebook</a> <a href="skype:ulrespect?chat"
+                    class="skype-ico">Наш Skype</a> <a href="https://twitter.com/ulrespect" class="twitter-ico"
+                        target="_blank">Мы в Twitter</a>
+            <br class="cl" />
+        </div>*@
+        <div class="arrs">
+            <a href="#" class="prev-arr"></a><a href="#" class="next-arr"></a>
+        </div>
+        <ul>
+            <li id="img1">
+                <div class="slide-cnt">
+                    <span class="subheader">Заказ через сайт</span> <span class="header">Быстрый заказ</span>
+                    <p>
+                        Совершая заказ через наш сайт, Вы экономите свое время. Кроме того, Вы экономите
+                        и наше время тоже, за это мы дарим Вам
+                        <br />
+                        <strong>скидку 5%</strong>.<br />
+                        @Html.ActionLink("Заказать перевод", "index", "order")</p>
+                </div>
+                <img src="images/time.png" alt="" />
+            </li>
+            <li id="img2">
+                <div class="slide-cnt">
+                    <span class="subheader">Перевод и локализация</span><span class="header">вэб-сайтов</span>
+                    <p>
+                        Заказывая у нас перевод своего сайта, вы получаете сразу две услуги: переводчика
+                        и программиста. Даже если ваш сайт не предусматривает мультиязычность, эта функция
+                        будет разработана нашими программистами.
+                        <br />@Html.ActionLink("Заказать оценку", "index", "order")</p>
+                </div>
+                <img src="images/lang.png" alt="" />
+            </li>
+            <li id="img3">
+                <div class="slide-cnt">
+                    <span class="subheader">Heading Title Goes</span> <span class="header">Just Like That</span>
+                    <p>
+                        Acor porta mi, non venenatis augue imperdiet quis. Nam faucibus, felis ut suscipit
+                        vulputate, tortor quam ultricies neque, eget dignissim elit urna a metus. Aliquam
+                        sed quam dui, id lacinia nunc. <a href="#">read more</a></p>
+                </div>
+                <img src="css/images/mac-img.png" alt="" />
+            </li>
+        </ul>
+    </div>
+    <!-- end of slider -->
+    <!-- thumbs -->
+    <div id="thumbs-wrapper">
+        <div id="thumbs">
+            <a href="#img1" class="selected">
+                <img src="images/thumb1.png" /></a> <a href="#img2">
+                    <img src="images/thumb3.png" /></a> <a href="#img3">
+                        <img src="images/thumb2.png" /></a>
+        </div>
+        <a id="prev" href="#"></a><a id="next" href="#"></a>
+    </div>
+    <!-- end of thumbs -->
+</div>
+<div class="main">
+    <div class="featured">
+        <h4>
+            Акция. При заказе перевода через сайт Вы получите скидку <strong>5%</strong></h4>
+        @Html.ActionLink("Заказать перевод", "Index", "order", null, new { @class = "blue-btn" })
+    </div>
+    <h1>
+        Бюро переводов Respect</h1>
+    <section class="cols">
+        <div class="col">
+            <h3>
+                О нас</h3>
+            <p>
+                Бюро переводов Respect осуществляет перевод с английского, немецкого, французскоко
+                языков. Мы готовы перевести любые тексты, документы, также занимаемся локализацией
+                веб-сайтов.
+                @Html.ActionLink("Подробнее...", "Index", "about", null, new { @class = "more" })</p>
+        </div>
+        <div class="col">
+            <h3>
+                Услуги
+            </h3>
+            <p>
+                В нашем бюро переводов Вы можете заказать перевод документов: паспорта, диплома,
+                аттестата, справок, свидетельств, договоров и контрактов; а также заверить перевод
+                у нотариуса. Наши переводчики оказывают услуги перевода для жителей Ульяновска и
+                других городов.
+                <br />
+                @Html.ActionLink("Подробнее...", "Index", "services", null, new { @class = "more" })</p>
+        </div>
+        <div class="col">
+            <h3>
+                Принципы работы</h3>
+            <ul>
+                <li>Индивидуальный подход к клиенту</li><li>Высокое качество перевода</li>
+                <li>Своевременное выполнение заказа</li>
+                <li>Гибкая ценовая политика</li>
+                <li>Ответственность за результат</li>
+            </ul>
+        </div>
+        <br class="cl" />
+    </section>
+    <section class="entries">
+        <div class="entry">
+            <h3>
+                Последние статьи</h3>
+            <div class="entry-inner">
+                <div class="date">
+                    <strong>5</strong> <span>2013</span> <em>июн</em>
+                </div>
+                <div class="cnt">
+                    <p>
+                        @Html.ActionLink("Что выбрать CV или Resume", "index", "articles", new { id = "chto-vybrat-cv-ili-resume" }, null)</p>
+                    <p class="meta">
+                        Виды переводческих услуг</p>
+                </div>
+            </div>
+            <div class="entry-inner">
+                <div class="date">
+                    <strong>19</strong> <span>2013</span> <em>май</em>
+                </div>
+                <div class="cnt">
+                    <p>
+                        @Html.ActionLink("Локализация вэб-сайтов", "index", "articles", new { id = "web-sites-localization" }, null)</p>
+                    <p class="meta">
+                        Виды переводческих услуг</p>
+                </div>
+            </div>
+            <div class="entry-inner">
+                <div class="date">
+                    <strong>9</strong> <span>2013</span> <em>мар</em>
+                </div>
+                <div class="cnt">
+                    <p>
+                        @Html.ActionLink("Нотариальное заверение перевода", "index", "articles", new { id = "notary-certification" }, null)</p>
+                    <p class="meta">
+                        Виды переводческих услуг</p>
+                </div>
+            </div>
+            @Html.ActionLink("Все статьи...", "index", "articles", null, new { @class = "more" })
+        </div>
+        <div class="entry">
+            <h3>
+                Партнеры</h3>
+            <p class="partners">
+                <!--noindex-->
+                <a href="http://advantshop.com/" rel="nofollow" target="_blank" title="AdVantShop.NET">
+                    <img src="images/advantshop.png" alt="AdVantShop.NET" /></a> <a href="http://stv73.ru/"
+                        rel="nofollow" target="_blank" title="Симбирское телевидение">
+                        <img src="images/stv.png" alt="Симбирское телевидение" /></a> <a href="http://www.sat-simbir.ru/"
+                            rel="nofollow" target="_blank" title="СпецМонтажСервис">
+                            <img src="images/sms.png" alt="СпецМонтажСервис" /></a>
+                <!-- /noindex -->
+            </p>
+        </div>
+        <div class="entry">
+            <h3>
+                Отзывы клиентов</h3>
+            <div class="testimonials">
+                <p>
+                    Заказывала в этом центре перевод справки из банка для оформления визы. Все сделали
+                    достаточно быстро и качествено. Спасибо.</p>
+                <p class="author">
+                    Наталья Орлова</p>
+                <br />
+                <p>
+                    Диплом перевели на английский за один день. Спасибо, респект!</p>
+                <p class="author">
+                    Константин Быстров</p>
+            </div>
+            @Html.ActionLink("Оставить отзыв...", "index", "reviews", null, new { @class = "more" })
+        </div>
+        <br class="cl" />
+    </section>
+</div>
